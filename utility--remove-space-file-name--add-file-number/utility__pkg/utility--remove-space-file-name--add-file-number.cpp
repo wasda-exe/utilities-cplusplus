@@ -20,7 +20,7 @@ createModifiedNameCPP(std::string pszFileName, std::string pszFileNum)
 
     std::string word;
     std::string newFileName;
-    if (pszFileNum != "none" || pszFileNum != "NONE")
+    if (pszFileNum != "none" && pszFileNum != "NONE")
     {
         if (pszFileNum.size() == 1)
             pszFileNum.insert(0, "0");
